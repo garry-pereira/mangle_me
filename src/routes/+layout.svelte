@@ -6,7 +6,7 @@
     import "../app.css";
 </script>
 
-<div class="app min-h-screen flex flex-col justify-between">
+<div class="app min-h-[100svh] flex flex-col justify-between">
     <Header>
         <Banner />
         <Navbar />
@@ -18,6 +18,3 @@
 
     <Footer />
 </div>
-
-<style>
-</style>

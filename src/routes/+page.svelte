@@ -1,14 +1,21 @@
+<script>
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    };
+</script>
+
 <svelte:head>
     <title>Home</title>
     <meta name="description" content="mangle me" />
 </svelte:head>
 
-<section class="flex flex-col justify-center">
+<section class="flex flex-col gap-2">
     <h1 class="text-3xl font-bold underline text-center">hello world</h1>
 </section>
 
 <style lang="postcss">
     :global(html) {
-        background-color: theme(colors.pink.100);
+        background-color: theme(colors.neutral.950);
+        color: theme(colors.neutral.300);
     }
 </style>
