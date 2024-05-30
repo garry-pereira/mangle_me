@@ -22,7 +22,11 @@
 <nav class="flex justify-around">
     <ul class="flex gap-6">
         {#each [...nav.data] as [key, value]}
-            <li><a href={key}><i class={"fa-solid " + value}></i></a></li>
+            {#if key.startsWith("http")}
+                <li><a href={key} target="_blank"><i class={"fa-solid " + value}></i></a></li>
+            {:else}
+                <li><a href={key}><i class={"fa-solid " + value}></i></a></li>
+            {/if}
         {/each}
     </ul>
 </nav>
